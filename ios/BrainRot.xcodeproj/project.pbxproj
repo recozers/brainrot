@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BFD4F50261DEFA11566A065 /* MWDATCamera in Frameworks */ = {isa = PBXBuildFile; productRef = 746B3C00791678140CDE8A7D /* MWDATCamera */; };
+		3514ECC06EBCCB445835F060 /* BrainRotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DA95E5B562F779FD9C927A /* BrainRotApp.swift */; };
+		4F12DE73168595139478A1DB /* Regions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5E9C80954A6AC1117D07B /* Regions.swift */; };
+		598ABF65EF1352F785D63D16 /* AudioKeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD4867F20747EEB299DCEF2 /* AudioKeeper.swift */; };
+		5A6834154D1984D506F70DCE /* GlassesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA0DAC35859C5526B6CBA85 /* GlassesManager.swift */; };
+		5F595263C08D70F7914942D9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EB09C2FC9C94250DCFC306 /* API.swift */; };
+		8D091424832D91FE57073C94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E733D9811E94D4E2BF90D0C /* ContentView.swift */; };
+		A6B052AB07BB02DDCB183D8D /* BrainSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB1DB2C90B5A85715FC1C53 /* BrainSceneView.swift */; };
+		B1C1F6C060B5015373ADA367 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CD84EA7EADEA0DCFB69918 /* SettingsView.swift */; };
+		B5F897CEED5A0A17EAB77933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C52B1492AC5115693CB4DEFA /* Assets.xcassets */; };
+		C068E11824DF4F022FB61B65 /* brain_mesh.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BE780BBE31240DBEC194372 /* brain_mesh.json */; };
+		C0B279F544D5B75EF0DE0A0F /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D78BEC421F02C77DDF7CC /* Notifier.swift */; };
+		CCF5D41F6385EFFC356F4DE6 /* MWDATCore in Frameworks */ = {isa = PBXBuildFile; productRef = FD9BEAE9D7145FBF2205BE84 /* MWDATCore */; };
+		FDB740D3527434361F273681 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EBD813A390BB63D2AB4A1A /* AppModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D7D78BEC421F02C77DDF7CC /* Notifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifier.swift; sourceTree = "<group>"; };
+		12DA95E5B562F779FD9C927A /* BrainRotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainRotApp.swift; sourceTree = "<group>"; };
+		2D9E0A7B1A4B365723B1F74D /* BrainRot.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BrainRot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AD4867F20747EEB299DCEF2 /* AudioKeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioKeeper.swift; sourceTree = "<group>"; };
+		3BF5E9C80954A6AC1117D07B /* Regions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regions.swift; sourceTree = "<group>"; };
+		3E733D9811E94D4E2BF90D0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		49EBD813A390BB63D2AB4A1A /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		5DB1DB2C90B5A85715FC1C53 /* BrainSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainSceneView.swift; sourceTree = "<group>"; };
+		5F82F012BEE2570825065795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		75EB09C2FC9C94250DCFC306 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		80CD84EA7EADEA0DCFB69918 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		9AA0DAC35859C5526B6CBA85 /* GlassesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassesManager.swift; sourceTree = "<group>"; };
+		9BE780BBE31240DBEC194372 /* brain_mesh.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = brain_mesh.json; sourceTree = "<group>"; };
+		C52B1492AC5115693CB4DEFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		"TEMP_696D3D8A-49C5-464B-BD3C-C58973FDC677" /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4D1BF9191CC1C9D297FB4BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF5D41F6385EFFC356F4DE6 /* MWDATCore in Frameworks */,
+				2BFD4F50261DEFA11566A065 /* MWDATCamera in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		251AC1D3BDE74645563F1071 = {
+			isa = PBXGroup;
+			children = (
+				D04AC7F0E1A48A3E07C81605 /* BrainRot */,
+				5A2178C5E3C235BF741B50B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4403A85947B328EBF38CA543 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9BE780BBE31240DBEC194372 /* brain_mesh.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5A2178C5E3C235BF741B50B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D9E0A7B1A4B365723B1F74D /* BrainRot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D04AC7F0E1A48A3E07C81605 /* BrainRot */ = {
+			isa = PBXGroup;
+			children = (
+				75EB09C2FC9C94250DCFC306 /* API.swift */,
+				49EBD813A390BB63D2AB4A1A /* AppModel.swift */,
+				C52B1492AC5115693CB4DEFA /* Assets.xcassets */,
+				3AD4867F20747EEB299DCEF2 /* AudioKeeper.swift */,
+				12DA95E5B562F779FD9C927A /* BrainRotApp.swift */,
+				5DB1DB2C90B5A85715FC1C53 /* BrainSceneView.swift */,
+				3E733D9811E94D4E2BF90D0C /* ContentView.swift */,
+				9AA0DAC35859C5526B6CBA85 /* GlassesManager.swift */,
+				5F82F012BEE2570825065795 /* Info.plist */,
+				0D7D78BEC421F02C77DDF7CC /* Notifier.swift */,
+				3BF5E9C80954A6AC1117D07B /* Regions.swift */,
+				80CD84EA7EADEA0DCFB69918 /* SettingsView.swift */,
+				4403A85947B328EBF38CA543 /* Resources */,
+			);
+			path = BrainRot;
+			sourceTree = "<group>";
+		};
+		"TEMP_F491D301-F558-4D87-870B-42AD1585E0FA" /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_696D3D8A-49C5-464B-BD3C-C58973FDC677" /* Config.xcconfig */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D0DF6295ED0D721C917A18C /* BrainRot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF07900EDCAF758752A14A9 /* Build configuration list for PBXNativeTarget "BrainRot" */;
+			buildPhases = (
+				8372618D69D094ED770C290C /* Sources */,
+				BE0463C9DFA38F13FFA5E73C /* Resources */,
+				A4D1BF9191CC1C9D297FB4BE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrainRot;
+			packageProductDependencies = (
+				FD9BEAE9D7145FBF2205BE84 /* MWDATCore */,
+				746B3C00791678140CDE8A7D /* MWDATCamera */,
+			);
+			productName = BrainRot;
+			productReference = 2D9E0A7B1A4B365723B1F74D /* BrainRot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		967CB128A37F2249B3130DC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					7D0DF6295ED0D721C917A18C = {
+						DevelopmentTeam = 5Z53Y286DJ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 47110325C26CF04F72A2BA28 /* Build configuration list for PBXProject "BrainRot" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 251AC1D3BDE74645563F1071;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5E8C6F662F6109E6F7B96C3E /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5A2178C5E3C235BF741B50B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D0DF6295ED0D721C917A18C /* BrainRot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE0463C9DFA38F13FFA5E73C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F897CEED5A0A17EAB77933 /* Assets.xcassets in Resources */,
+				C068E11824DF4F022FB61B65 /* brain_mesh.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8372618D69D094ED770C290C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F595263C08D70F7914942D9 /* API.swift in Sources */,
+				FDB740D3527434361F273681 /* AppModel.swift in Sources */,
+				598ABF65EF1352F785D63D16 /* AudioKeeper.swift in Sources */,
+				3514ECC06EBCCB445835F060 /* BrainRotApp.swift in Sources */,
+				A6B052AB07BB02DDCB183D8D /* BrainSceneView.swift in Sources */,
+				8D091424832D91FE57073C94 /* ContentView.swift in Sources */,
+				5A6834154D1984D506F70DCE /* GlassesManager.swift in Sources */,
+				C0B279F544D5B75EF0DE0A0F /* Notifier.swift in Sources */,
+				4F12DE73168595139478A1DB /* Regions.swift in Sources */,
+				B1C1F6C060B5015373ADA367 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6668920A9B78BCB519FB6F2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5Z53Y286DJ;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8A679F220BAB77E2EC641A38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5Z53Y286DJ;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A1EC4F6FE900B01112304995 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = "TEMP_696D3D8A-49C5-464B-BD3C-C58973FDC677" /* Config.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = BrainRot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stuartbladon.brainrot;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D5E6305EAB9212640EF46DB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = "TEMP_696D3D8A-49C5-464B-BD3C-C58973FDC677" /* Config.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = BrainRot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stuartbladon.brainrot;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47110325C26CF04F72A2BA28 /* Build configuration list for PBXProject "BrainRot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6668920A9B78BCB519FB6F2B /* Debug */,
+				8A679F220BAB77E2EC641A38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BCF07900EDCAF758752A14A9 /* Build configuration list for PBXNativeTarget "BrainRot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5E6305EAB9212640EF46DB7 /* Debug */,
+				A1EC4F6FE900B01112304995 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E8C6F662F6109E6F7B96C3E /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/meta-wearables-dat-ios";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		746B3C00791678140CDE8A7D /* MWDATCamera */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E8C6F662F6109E6F7B96C3E /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */;
+			productName = MWDATCamera;
+		};
+		FD9BEAE9D7145FBF2205BE84 /* MWDATCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E8C6F662F6109E6F7B96C3E /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */;
+			productName = MWDATCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 967CB128A37F2249B3130DC3 /* Project object */;
+}

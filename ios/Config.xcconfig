@@ -1,0 +1,4 @@
+// Shared build config. Put your backend URL in Local.xcconfig (gitignored), e.g.
+// BRAINROT_BACKEND_URL = https:/$()/your-workspace--brainrot-brainrot-web.modal.run
+BRAINROT_BACKEND_URL =
+#include? "Local.xcconfig"

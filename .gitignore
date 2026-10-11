@@ -1,0 +1,17 @@
+# Build output / SPM checkouts
+ios/build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+# iCloud duplicate artifacts
+* 2.*
+# Local config (backend URL)
+ios/Local.xcconfig
+# Private session data (camera frames, transcripts)
+backups/
+DEMO_PLAN.md
+# Python
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
