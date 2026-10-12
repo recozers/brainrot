@@ -1,6 +1,10 @@
+<p align="center"><img src="docs/icon.png" width="120" alt="BrainRot app icon"></p>
+
 # BrainRot 🧠🪰
 
 **Watch your brain rot in real time — and get roasted until you touch grass.**
+
+<p align="center"><img src="docs/app.png" width="300" alt="BrainRot app: a 3D brain with mould on the rotting regions, a roast, and six region health rings"></p>
 
 BrainRot is an all-day brain wearable built on **Oakley Meta Vanguard** smart glasses and Meta FAIR's **TRIBE v2** brain encoding model. Every couple of minutes the glasses grab a few seconds of first-person video and your phone grabs audio. TRIBE v2 predicts how your cortex would respond (20,484 points on the fsaverage5 surface), we fold that into six brain regions, and anything you don't use **decays**. A 3D brain in the app visibly rots — mould colonies, sagging tissue, flies — and a deeply condescending AI pushes notifications telling you exactly how to fix it.
 
@@ -74,6 +78,14 @@ echo 'BRAINROT_BACKEND_URL = https:/$()/<your-workspace>--brainrot-brainrot-web.
 xcodegen generate && open BrainRot.xcodeproj
 ```
 In the app: Settings → Connect glasses → Grant camera permission → Start watching → lock your phone.
+
+## Limitations (it's a hackathon build)
+- **The hosted backend is offline.** To try it, deploy your own (below). It needs an H100-class GPU and costs about $4/hr while warm.
+- **No auth on the API.** Anyone with the URL can post captures or reset state. Add auth before leaving it deployed.
+- **While BrainRot holds the camera stream, the glasses' own capture button doesn't work.** Also, only one 360p frame per capture is kept server-side.
+- **Rot is a model of a model.** TRIBE v2 predicts an *average* brain's fMRI response from short low-res clips, mapped through anatomical (not functional) regions and blended with a vision model's read of the scene. It's a fun mirror, not neuroscience about *your* brain.
+- **The iOS app can't go on the App Store yet**, because Meta's Device Access Toolkit is still in developer preview. Install from Xcode.
+- **Needs Gemini billing.** The free tier (~20 requests/day/model) runs out in under an hour of 2-minute captures.
 
 ## Credits & licences
 - [TRIBE v2](https://github.com/facebookresearch/tribev2) — Meta FAIR (check its licence; weights are reportedly non-commercial).
