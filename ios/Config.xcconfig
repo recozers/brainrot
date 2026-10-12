@@ -1,4 +1,11 @@
-// Shared build config. Put your backend URL in Local.xcconfig (gitignored), e.g.
-// BRAINROT_BACKEND_URL = https:/$()/your-workspace--brainrot-brainrot-web.modal.run
+// Shared build settings. Don't put personal values here — copy Local.xcconfig.example
+// to Local.xcconfig (gitignored) and fill in your own team, bundle prefix and backend URL.
+
+// Your Apple Developer Team ID (Xcode > Settings > Accounts). Empty = pick a team in Xcode.
+DEVELOPMENT_TEAM =
+// Reverse-DNS prefix; the app's bundle ID becomes <prefix>.brainrot.
+BRAINROT_BUNDLE_ID_PREFIX = com.example
+// Base URL of your deployed backend (note the https:/$()/ trick — // starts a comment in xcconfig).
 BRAINROT_BACKEND_URL =
+
 #include? "Local.xcconfig"

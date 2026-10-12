@@ -38,7 +38,7 @@
 		9AA0DAC35859C5526B6CBA85 /* GlassesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassesManager.swift; sourceTree = "<group>"; };
 		9BE780BBE31240DBEC194372 /* brain_mesh.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = brain_mesh.json; sourceTree = "<group>"; };
 		C52B1492AC5115693CB4DEFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		"TEMP_696D3D8A-49C5-464B-BD3C-C58973FDC677" /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		"TEMP_80486154-0495-483D-91FB-51BC5223A433" /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +98,10 @@
 			path = BrainRot;
 			sourceTree = "<group>";
 		};
-		"TEMP_F491D301-F558-4D87-870B-42AD1585E0FA" /* ios */ = {
+		"TEMP_71793605-7889-4BC4-9D9F-A1846843E1B6" /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				"TEMP_696D3D8A-49C5-464B-BD3C-C58973FDC677" /* Config.xcconfig */,
+				"TEMP_80486154-0495-483D-91FB-51BC5223A433" /* Config.xcconfig */,
 			);
 			path = ios;
 			sourceTree = "<group>";
@@ -140,7 +140,7 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					7D0DF6295ED0D721C917A18C = {
-						DevelopmentTeam = 5Z53Y286DJ;
+						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -237,7 +237,6 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 5Z53Y286DJ;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -304,7 +303,6 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 5Z53Y286DJ;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -329,7 +327,7 @@
 		};
 		A1EC4F6FE900B01112304995 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = "TEMP_696D3D8A-49C5-464B-BD3C-C58973FDC677" /* Config.xcconfig */;
+			baseConfigurationReference = "TEMP_80486154-0495-483D-91FB-51BC5223A433" /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -338,7 +336,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.stuartbladon.brainrot;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BRAINROT_BUNDLE_ID_PREFIX).brainrot";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -346,7 +344,7 @@
 		};
 		D5E6305EAB9212640EF46DB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = "TEMP_696D3D8A-49C5-464B-BD3C-C58973FDC677" /* Config.xcconfig */;
+			baseConfigurationReference = "TEMP_80486154-0495-483D-91FB-51BC5223A433" /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -355,7 +353,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.stuartbladon.brainrot;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BRAINROT_BUNDLE_ID_PREFIX).brainrot";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -70,14 +70,15 @@ BRAINROT_WARM=1 modal deploy -e brainrot backend/app.py
 Endpoints: `POST /capture` (multipart frames + audio), `GET /timeline`, `GET /thumb/{id}`, `POST /reset`, `GET|POST /admin/params` (live tuning). ⚠️ No auth — this is a hackathon build; don't leave it deployed.
 
 ### iOS
-Needs Xcode 26, an iPhone, Meta AI app, and glasses with **Developer Mode** enabled in the Meta AI app.
+Needs Xcode 26, an iPhone, [xcodegen](https://github.com/yonaskolb/XcodeGen), the Meta AI app, and glasses with **Developer Mode** enabled in the Meta AI app.
 ```bash
 cd ios
-echo 'BRAINROT_BACKEND_URL = https:/$()/<your-workspace>--brainrot-brainrot-web.modal.run' > Local.xcconfig
-# set DEVELOPMENT_TEAM / bundleIdPrefix in project.yml, then
+cp Local.xcconfig.example Local.xcconfig   # then set your team ID, bundle prefix and backend URL
 xcodegen generate && open BrainRot.xcodeproj
 ```
-In the app: Settings → Connect glasses → Grant camera permission → Start watching → lock your phone.
+Signing identity and the backend URL live only in `Local.xcconfig`, which is gitignored. The committed project builds as `com.example.brainrot` with no team set, so the simulator works straight away; pick your team in Xcode (or set `DEVELOPMENT_TEAM` in `Local.xcconfig`) to run on a device.
+
+In the app: Settings → Connect glasses → Grant camera permission → Start watching → lock your phone. Launch with the `-demoRot` argument to preview the rot visuals without a backend.
 
 ## Limitations (it's a hackathon build)
 - **The hosted backend is offline.** To try it, deploy your own (below). It needs an H100-class GPU and costs about $4/hr while warm.
@@ -88,6 +89,8 @@ In the app: Settings → Connect glasses → Grant camera permission → Start w
 - **Needs Gemini billing.** The free tier (~20 requests/day/model) runs out in under an hour of 2-minute captures.
 
 ## Credits & licences
+
+BrainRot's own code is [MIT](LICENSE). The pieces it builds on have their own terms:
 - [TRIBE v2](https://github.com/facebookresearch/tribev2) — Meta FAIR (check its licence; weights are reportedly non-commercial).
 - [Meta Wearables Device Access Toolkit](https://github.com/facebook/meta-wearables-dat-ios).
 - fsaverage5 surface & Destrieux atlas via nilearn / FreeSurfer.
